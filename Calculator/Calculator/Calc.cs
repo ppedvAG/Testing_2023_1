@@ -1,10 +1,12 @@
-﻿namespace Calculator
+﻿using System.Linq.Expressions;
+
+namespace Calculator
 {
     public class Calc
     {
         public int Sum(int a, int b)
         {
-            return a + b;
+            return checked(a + b);
         }
     }
 }
