@@ -1,8 +1,12 @@
-﻿namespace TddBank
+﻿using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("TddBank.Tests")]
+
+namespace TddBank
 {
     public class OpeningHours
     {
-        public bool IsOpen(DateTime dt)
+        internal bool IsOpen(DateTime dt)
         {
             var start = new TimeSpan(10, 30, 0);
             var ende = new TimeSpan(19, 00, 0);
