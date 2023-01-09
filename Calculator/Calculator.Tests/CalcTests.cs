@@ -47,6 +47,7 @@ namespace Calculator.Tests
         }
 
         [TestMethod]
+        [TestCategory("ExceptionTest")]
         public void Sum_MAX_and_1_throws_OverflowException()
         {
             var calc = new Calc();
