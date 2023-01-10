@@ -1,4 +1,5 @@
 using BooksManager.Common;
+using FluentAssertions;
 using Moq;
 
 namespace BooksManager.BooksService.Tests
@@ -12,7 +13,8 @@ namespace BooksManager.BooksService.Tests
 
             var result = service.GetBookWithBestPricePagesRatio();
 
-            Assert.Equal("Book 2", result.Title);
+            //Assert.Equal("Book 2", result.Title);
+            result.Title.Should().Be("Book 2");
         }
 
         [Fact]
@@ -29,7 +31,7 @@ namespace BooksManager.BooksService.Tests
 
             var result = service.GetBookWithBestPricePagesRatio();
 
-            Assert.Equal("Book 2", result.Title);
+            result.Title.Should().Be("Book 2");
         }
 
         [Fact]
@@ -40,7 +42,7 @@ namespace BooksManager.BooksService.Tests
 
             var result = service.GetBookWithBestPricePagesRatio();
 
-            Assert.Null(result);
+            result.Should().BeNull();
         }
 
         [Fact]
@@ -58,7 +60,7 @@ namespace BooksManager.BooksService.Tests
 
             var result = service.GetBookWithBestPricePagesRatio();
 
-            Assert.Equal("Book 2", result.Title);
+            result.Title.Should().Be("Book 2");
         }
     }
 }
