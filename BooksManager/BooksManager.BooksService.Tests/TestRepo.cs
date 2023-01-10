@@ -10,5 +10,10 @@ namespace BooksManager.BooksService.Tests
             yield return new Book() { Title = "Book 1", Pages = 100, Price = 50 };
             yield return new Book() { Title = "Book 2", Pages = 200, Price = 50 };
         }
+
+        public void SaveBooks(IEnumerable<Book> books)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

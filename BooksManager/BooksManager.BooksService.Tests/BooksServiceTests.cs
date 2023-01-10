@@ -61,6 +61,8 @@ namespace BooksManager.BooksService.Tests
             var result = service.GetBookWithBestPricePagesRatio();
 
             result.Title.Should().Be("Book 2");
+
+            mock.Verify(x => x.GetBooks(), Times.Once());
         }
     }
 }

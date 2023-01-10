@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManager.BooksService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManager.BooksService.Tests", "BooksManager.BooksService.Tests\BooksManager.BooksService.Tests.csproj", "{4A1715B5-BC96-4A47-AD96-BEBF34995FB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManager.JSONRepo", "BooksManager.JSONRepo\BooksManager.JSONRepo.csproj", "{4EEFE528-1540-4E71-A97B-0CC49C156B33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManager.JSONRepo.Tests", "BooksManager.JSONRepo.Tests\BooksManager.JSONRepo.Tests.csproj", "{5524E128-1EF5-4A68-A7E0-962A381FA82E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{4A1715B5-BC96-4A47-AD96-BEBF34995FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A1715B5-BC96-4A47-AD96-BEBF34995FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A1715B5-BC96-4A47-AD96-BEBF34995FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EEFE528-1540-4E71-A97B-0CC49C156B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEFE528-1540-4E71-A97B-0CC49C156B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEFE528-1540-4E71-A97B-0CC49C156B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEFE528-1540-4E71-A97B-0CC49C156B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5524E128-1EF5-4A68-A7E0-962A381FA82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5524E128-1EF5-4A68-A7E0-962A381FA82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5524E128-1EF5-4A68-A7E0-962A381FA82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5524E128-1EF5-4A68-A7E0-962A381FA82E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
