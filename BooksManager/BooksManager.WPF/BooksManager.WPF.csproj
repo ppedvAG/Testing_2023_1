@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BooksManager.BooksService\BooksManager.BooksService.csproj" />
+    <ProjectReference Include="..\BooksManager.Common\BooksManager.Common.csproj" />
+    <ProjectReference Include="..\BooksManager.JSONRepo\BooksManager.JSONRepo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="books.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
