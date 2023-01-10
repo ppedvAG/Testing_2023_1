@@ -11,9 +11,12 @@ namespace BooksManager.BooksService
             Repository = repository;
         }
 
-        public Book GetBookWithBestPricePagesRatio()
+        public Book? GetBookWithBestPricePagesRatio()
         {
-            throw new NotImplementedException();
+            return Repository.GetBooks()
+                             .OrderBy(x => x.Price / x.Pages)
+                             .ThenBy(x => x.Price)
+                             .FirstOrDefault();
         }
     }
 }
